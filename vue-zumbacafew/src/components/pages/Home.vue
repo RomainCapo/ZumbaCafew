@@ -3,7 +3,7 @@
     <Header />
     <div id="intro">
       <div class="container">
-        <h1>Découvrez les statistiques cachées de vos rappeurs préférés !</h1> 
+        <h1>Découvrez les statistiques cachées de vos rappeurs préférés !</h1>
       </div>
     </div>
     <div class="container stats">
@@ -97,22 +97,34 @@
     </div>
     <div class="container annotation">
       <p>
-        Toutes les données de ce projet proviennent du site web
-        <a href="https://genius.com/">Genius</a>. Pour chaque artiste, le nombre
-        de mots uniques est calculé sur un ensemble de
+        Le graphique représente la richesse de vocabulaire de chaque artistes.
+        C'est à dire le nombre de mot uniques uitlisés par chaque chanteur. le
+        nombre de mots uniques est calculé sur un ensemble de
         <strong>20'000 mots</strong> récupérés sur ses musiques les plus
-        populaires. Les artistes qui n'atteignent pas ce seuil sont précisés via
-        une annotation.
+        populaires. Les artistes qui n'atteignent pas ce seuil peuvent être
+        filtré via le filtre <strong>"Seuil atteint"</strong>.
       </p>
       <p>
-        Le graphique permet de filtrer les artistes selon leur
-        <strong>sexe</strong>, s'il s'agit
-        <strong>d'un groupe ou d'un artiste solo</strong> et
-        <strong>l'année</strong> de celui ci.
+        Le graphique permet de filtrer les artistes selon :
+        <ul>
+          <li>Leur sexe</li>
+          <li>Le type d'artiste, solo ou groupe</li>
+          <li>L'année</li>
+          <li>L'atteint ou non du seuil de mot</li>
+        </ul>
+        Les filtres peuvent être combiné les uns les autres.
+        Il est également possible de rechercher les artistes via una barre de recherche en bas à droite du graphique. L'usage des filtres n'est plus accesible pendant le processus de recherche.
       </p>
       <p>
         La décennie à laquelle appartient chaque artiste est calculée à partir
         de la moyenne de ses musiques les plus populaires.
+      </p>
+      <p>
+        Le graphique est réalisé avec la librairie <a href="https://d3js.org/">D3.js</a>. Globalement voici les principales étapes de création du graphique : 
+      <ul>
+        <li>Initialisation de l'élément <strong>SVG</strong> avec une taille définit. Cet élément permet d'effectuer des dessin sur la page web.</li>
+        <li>Créati</li>
+      </ul>
       </p>
     </div>
     <div id="word-histogram-container">
@@ -138,16 +150,18 @@
             </span>
           </div>
           <div class="col-sm">
-              <label for="input-number-bin"><strong>Nombre de collones : </strong></label>
-              <input
-                type="number"
-                class="form-control"
-                id="input-number-bin"
-                min="3"
-                max="10"
-                value="6"
-                @input="inputNumberEvent"
-              />
+            <label for="input-number-bin"
+              ><strong>Nombre de collones : </strong></label
+            >
+            <input
+              type="number"
+              class="form-control"
+              id="input-number-bin"
+              min="3"
+              max="10"
+              value="6"
+              @input="inputNumberEvent"
+            />
           </div>
           <div class="col-sm">
             <span id="criterion-container">
@@ -215,14 +229,7 @@
       </div>
     </div>
 
-    <div class="container annotation">
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt natus,
-        reprehenderit quibusdam dolorum aliquid error deleniti aut corporis
-        iusto, accusamus sequi voluptatem eos quisquam aliquam! Atque sequi
-        libero quod magni? Plus d'information <a href="">ici</a>
-      </p>
-    </div>
+    <div class="container annotation"></div>
     <Footer />
   </div>
 </template>
@@ -351,9 +358,9 @@ export default {
     this.maxYear = await ArtistsApi.getMaxYear();
   },
   methods: {
-    inputNumberEvent(e){
-      let criterion = this.$refs.radioCriterions.currentValue
-      this.$refs.wordHistogram.numberInputEvent(e.target.value, criterion)
+    inputNumberEvent(e) {
+      let criterion = this.$refs.radioCriterions.currentValue;
+      this.$refs.wordHistogram.numberInputEvent(e.target.value, criterion);
     },
     filterBeeSwarm(e) {
       this.$refs.beeswarm.filter(e);

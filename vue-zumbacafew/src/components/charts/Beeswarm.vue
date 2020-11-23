@@ -12,7 +12,7 @@ export default {
     artistsStats: Object,
     circle_focus_radius: {
       type: Number,
-      default: 25,
+      default: 20,
     },
     circle_hide_radius: {
       type: Number,
@@ -20,7 +20,7 @@ export default {
     },
     explode_force: {
       type: Number,
-      default: 25,
+      default: 20,
     },
     height: {
       type: Number,
@@ -155,7 +155,6 @@ export default {
         });
 
       this.artistsStats.forEach((d) => {
-        console.log(d.image_url);
         this.svg
           .append("svg:pattern")
           .attr("id", "artist_" + Helper.replaceStringSpace(d.name))
@@ -179,7 +178,6 @@ export default {
         .attr("cy", this.height / 2 - this.margin.bottom / 2)
         .attr("r", this.circle_focus_radius)
         .attr("id", function (d) {
-          console.log(Helper.replaceStringSpace(d.name));
           return "circle_" + Helper.replaceStringSpace(d.name);
         })
         .merge(circles)
@@ -215,8 +213,8 @@ export default {
                 "<br>Atteint le seuil de mot: " +
                 Helper.isCompleteToFrench(d.is_complete)
             )
-            .style("top", event.layerY - 12 + "px")
-            .style("left", event.layerX + 25 + "px")
+            .style("left", event.pageX + 25 + "px")
+            .style("top", event.pageY - 12 + "px")
             .style("opacity", 0.9);
 
           self.xLine
@@ -241,7 +239,7 @@ export default {
             .forceX(function (d) {
               return xscale(+d["vocab_number_unique_word"]);
             })
-            .strength(2)
+            .strength(12)
         )
         .force("y", d3.forceY(this.height / 2 - this.margin.bottom / 2))
         .force("collide", d3.forceCollide(this.explode_force))
@@ -303,7 +301,6 @@ export default {
           break;
       }
       this.applyFilter();
-      console.log(this.beeswarmParams);
     },
     search(propositions, radioButtonGroups) {
       this.resetFilter(radioButtonGroups);

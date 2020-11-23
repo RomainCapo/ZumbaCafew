@@ -16,13 +16,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#beeswarm">Nuage d'artistes</a>
+          <a class="nav-link" href="/#beeswarm">Nuage d'artistes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#word-histogram">Histogramme</a>
+          <a class="nav-link" href="/#word-histogram">Histogramme</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#word-cloud">Nuage de mots</a>
+          <a class="nav-link" href="/#word-cloud">Nuage de mots</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">A propos</a>
         </li>
       </ul>
     </div>
