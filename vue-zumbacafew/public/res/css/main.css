@@ -30,7 +30,7 @@ a {
     border-top: 1px solid rgb(0, 178, 99);
 }
 
-#intro h1 {
+.intro h1 {
     text-align: center;
     font-size: 80px;
     font-weight: bold;
@@ -42,7 +42,7 @@ a {
     font-size: 50px;
 }
 
-#intro p {
+.intro p {
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -182,7 +182,7 @@ div.tooltip {
     p {
         font-size: 20px;
     }
-    #intro h1 {
+    .intro h1 {
         font-size: 50px;
     }
     #beeswarm-container .col-sm {
