@@ -26,7 +26,7 @@
     Un utilisateur peut obtenir plus d'informations ou faire ressortir des éléments efficacement à l'aide d'outils d'interaction mis à disposition :
     <ul>
       <li>Filtres</li>
-      <li>Barre de recherce</li>
+      <li>Barre de recherche</li>
     </ul>
     Un soin particulier est apporté pour que ces informations soient interpretables et manipulables par un large public. Pour ce faire nous avons réalisé des :
     <ul>
