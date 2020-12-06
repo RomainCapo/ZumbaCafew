@@ -3,8 +3,41 @@
     <Header />
     <h1>Documentation</h1>
     <div class="container annotation">
+    <h2>Le projet</h2>
     <p>
-      Cette section du site s'adresse à toutes les personnes qui s'intéressent aux détails de l'implémentation de cette application.
+    Ce projet s'intéresse au vocabulaire des artistes de hip-hop français et vise à fournir des réponses aux questions suivantes :
+    <ul>
+      <li>Est-ce que le vocabulaire de tel artiste est plus riche que celui d’un autre ? </li>
+      <li>Est-ce que les mots les plus fréquemment utilisés sont vulgaires ?</li>
+      <li>Est-ce que certains mots deviennent plus fréquents au fil des années ?</li>
+    </ul>
+    Les publics ciblés sont :
+    <ul>
+      <li>Prioritaire : Personnes écoutant de la musique hip-hop française</li>
+      <li>Secondaire : Personnes curieuses et intéressées par des statistiques diverses</li>
+    </ul>
+    Nous essayons de répondre à ces questions à l'aide des outils de visualisation suivants :
+    <ul>
+      <li>Graphique beeswarm : utile pour comparer des distributions tout en affichant des détails sur des éléments ayant des fréquences similaires</li>
+      <li>Histogramme empilé : utile pour visualiser des distributions détaillées par des axes d'analyse</li>
+      <li>Nuage de mots : utile pour visualiser des mots-clés en faisant ressortir les éléments les plus importants</li>
+      <li>Graphique en ligne : utile pour visualiser une évolution au cours du temps</li>
+    </ul>
+    Un utilisateur peut obtenir plus d'informations ou faire ressortir des éléments efficacement à l'aide d'outils d'interaction mis à disposition :
+    <ul>
+      <li>Filtres</li>
+      <li>Barre de recherce</li>
+    </ul>
+    Un soin particulier est apporté pour que ces informations soient interpretables et manipulables par un large public. Pour ce faire nous avons réalisé des :
+    <ul>
+      <li>Tests d'utilisabilité : interfaces intuitives et agréables à utiliser</li>
+      <li>Tests d'accessibilité : pour ce projet, s'assurer que les graphiques soient lisibles par des personnes atteintes de Daltonisme</li>
+    </ul>
+    Ainsi, nous espérons satisfaire la curiosité des utilisateurs à l'aide des ces différents graphiques et outils mis à disposition. 
+    </p>
+    <h2>Implémentation</h2>
+    <p>
+      Les prochaines sections s'adressent à toutes les personnes qui s'intéressent aux détails de l'implémentation de cette application.
     </p>
       <h2>Jeu de données</h2>
       <p>
