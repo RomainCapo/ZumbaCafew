@@ -13,15 +13,15 @@
     </ul>
     Les publics ciblés sont :
     <ul>
-      <li>Prioritaire : Personnes écoutant de la musique hip-hop française</li>
-      <li>Secondaire : Personnes curieuses et intéressées par des statistiques diverses</li>
+      <li><strong>Prioritaire : </strong>Personnes écoutant de la musique hip-hop française</li>
+      <li><strong>Secondaire : </strong>Personnes curieuses et intéressées par des statistiques diverses</li>
     </ul>
     Nous essayons de répondre à ces questions à l'aide des outils de visualisation suivants :
     <ul>
-      <li>Graphique beeswarm : utile pour comparer des distributions tout en affichant des détails sur des éléments ayant des fréquences similaires</li>
-      <li>Histogramme empilé : utile pour visualiser des distributions détaillées par des axes d'analyse</li>
-      <li>Nuage de mots : utile pour visualiser des mots-clés en faisant ressortir les éléments les plus importants</li>
-      <li>Graphique en ligne : utile pour visualiser une évolution au cours du temps</li>
+      <li><strong>Graphique beeswarm : </strong>Utile pour comparer des distributions tout en affichant des détails sur des éléments ayant des fréquences similaires sous form continue. Il est alors facile pour l'utilisateur de comparer la différence entre le vocabulaire de deux artistes à l'aide la distance qui les sépare.</li>
+      <li><strong>Histogramme empilé : </strong>Utile pour visualiser des distributions détaillées par des axes d'analyse sous forme discrète. Ce graphique présente la richesse de vocabulaire entre les artistes d'une manière différente de celle exploité ci-dessus. Cette option permet de regrouper les artistes dans des catégories en fonction de leur vocabulaire.</li>
+      <li><strong>Nuage de mots : </strong>Utile pour visualiser des mots-clés en faisant ressortir les éléments les plus importants</li>
+      <li><strong>Graphique en ligne : </strong>Utile pour visualiser une évolution au cours du temps</li>
     </ul>
     Un utilisateur peut obtenir plus d'informations ou faire ressortir des éléments efficacement à l'aide d'outils d'interaction mis à disposition :
     <ul>
@@ -174,6 +174,22 @@
           <li>La base de données</li>
         </ul>
         Ces "containers" sont déployés dans un environement IaaS d'un hébergeur cloud.
+      </p>
+      <h2>Conclusion</h2>
+      <p>
+        Pour conclure, on peut dire que les différentes visualisation mise en place pour ce projet permettent de répondre le plus efficacement possible au questions posé en début de projet tout en s'adressant au maximum au publique cible. 
+      </p>
+      <p>
+        Le graphique beeswarm et l'histogramme d'artiste permettent de répondre chacun à leur manière à la question de la richesse du vocabulaire des artistes. Ces deux solutions permettent de comparer efficacement le vocabulaire entre deux artistes ou une catégorie d'artiste (genre, année, etc). La première représentation permet une comparaison du vocabulaire des artistes à partir de la distance qui les sépare sur l'axe x. La seconde permet de les comparer en fonction de la catégorie de l'histogramme à laquel ils appartiennent.
+      </p>
+      <p>
+        Le nuage de mot permet de répondre à la question de la fréquence des mots en générale dans la musique francaise ou pour un artiste en particulier. La représentation permet de comparer efficacement l'utilisation d'un mot par rapport à un autre en fonction de la taille qu'il occupe sur le graphique.
+      </p>
+      <p>
+        Les deux derniers graphiques permettent de répondre à la question de l'évolution de l'utilisation en fonction du temps. Le line chart ainsi que l'histogramme permettent de suivre la variation de l'utilisation d'un mot d'une année à l'autre. 
+      </p>
+      <p>
+        Pour finir, on peut dire que les test utilisabilités et d'accessibilités mis en place nous permette de confirmer une utilisation optimale de l'application pour les utilisateurs. 
       </p>
     </div>
     <Footer />
