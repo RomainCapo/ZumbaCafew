@@ -120,6 +120,9 @@
         <li><code>api/termfrequencyByYear</code> : Dictionnaire des mots les plus utilisés par année</li>
         <li><code>api/wordcount</code> : Nombre de mot analysés</li>
       </ul>
+      Pour les statistiques utilisant la fréquence d'appartion des mots, un filtre est utilisé pour retirer les mots vides.
+      Un mot vide est un mot très commun dans une langue qui généralement n'apporte pas d'information pour la tâche réalisée. 
+      En effet, il ne serait pas très intéressant de visualiser que le mot le plus utilisé par les artistes sont par exemple des déterminants.
       </p>
       <h2>Frontend</h2>
       <p>
@@ -127,6 +130,17 @@
       </p>
       <p>
         Les graphiques du nuage d'artiste et du nuage de mot sont réalisés à l'aide de la bibliothèque <a href="https://d3js.org/">D3.js</a>. L'histogramme d'artiste est réalisé en Javascript Vanilla sans aucune librairie. Pour plus de détail sur la réalisation de ces graphiques, veuillez consulter la section appropriée sous chacune des visualisations en question.
+      </p>
+      <h2>Déploiement</h2>
+      <p>
+        Les diverses applications formant le projet sont déployables sous forme de "container" <a href="https://www.docker.com/">Docker</a>.
+        Les 3 "containers" sont dédiés à :
+        <ul>
+          <li>L'application frontend</li>
+          <li>L'application backend</li>
+          <li>La base de données</li>
+        </ul>
+        Ces "containers" sont déployés dans un environement IaaS d'un hébergeur cloud.
       </p>
     </div>
     <Footer />
