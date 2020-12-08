@@ -175,23 +175,23 @@
           <li>L'application backend</li>
           <li>La base de données</li>
         </ul>
-        Ces "containers" sont déployés dans un environement IaaS d'un hébergeur cloud.
+        Ces "containers" sont déployés sur une infrastructure IaaS d'un hébergeur cloud.
       </p>
       <h2>Conclusion</h2>
       <p>
-        Pour conclure, on peut dire que les différentes visualisations mise en place pour ce projet permettent de répondre le plus efficacement possible aux questions posées en début de projet tout en s'adressant au maximum au publique cible.
+        Pour conclure, on peut dire que les différentes visualisations mises en place pour ce projet permettent de répondre le plus efficacement possible aux questions posées tout en s'adressant au maximum au publique cible.
       </p>
       <p>
         Le graphique beeswarm et l'histogramme d'artiste permettent de répondre chacun à leur manière à la question de la richesse du vocabulaire des artistes. Ces deux solutions permettent de comparer efficacement le vocabulaire entre deux artistes ou une catégorie d'artiste (genre, année, etc). La première représentation permet une comparaison du vocabulaire des artistes à partir de la distance qui les sépare sur l'axe x. La seconde permet de les comparer en fonction de la catégorie de l'histogramme à laquel ils appartiennent.
       </p>
       <p>
-        Le nuage de mots permet de répondre à la question de la fréquence des mots en générale dans la musique francaise ou pour un artiste en particulier. La représentation permet de comparer efficacement l'utilisation d'un mot par rapport à un autre en fonction de la taille qu'il occupe sur le graphique.
+        Le nuage de mots permet de répondre à la question de la fréquence des mots en général dans la musique francaise ou pour un artiste en particulier. La représentation permet de comparer efficacement l'utilisation d'un mot par rapport à un autre en fonction de la taille qu'il occupe sur le graphique. Ainsi nous parvenons à faire ressortir les sujets principales traitaient par les artistes.
       </p>
       <p>
-        Les deux derniers graphiques, le linechart et l'histogramme, permettent eux de répondre à la question de l'évolution de l'utilisation d'un mot en fonction du temps. Ils permettent de visualiser la variation et l'évolution de l'utilisation d'un mot au cours des années avec des graphiques adaptés aux séries temporelles.
+        Les deux derniers graphiques, le linechart et l'histogramme, permettent eux de répondre à la question de l'évolution de l'utilisation d'un mot en fonction du temps. Ils permettent de visualiser l'évolution de l'utilisation d'un mot au cours des années avec des graphiques adaptés aux séries temporelles.
       </p>
       <p>
-        Pour finir, on peut dire que les tests utilisabilités et d'accessibilités mis en place nous permettent de confirmer une utilisation optimale de l'application pour les utilisateurs.
+        Pour finir, on peut dire que les tests d'utilisabilités et d'accessibilités mis en place nous permettent d'optimiser l'ergonomie de l'application pour les utilisateurs.
       </p>
     </div>
     <Footer />
